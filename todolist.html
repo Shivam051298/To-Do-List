@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDoList</title>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.min.css">
+</head>
+<body>
+	<div class="header" id="navbar">
+		<h2><i class="icon fas fa-list-ol"></i> TODOLIST <i class="icon fas fa-list-ul"></i></h2>
+	</div>
+	<div id="container"></div>
+	<div id="bottom">
+		<button class="addButton" id="buttonAdd"><i class="icon far fa-plus-square"></i> Add Task</button>
+	</div>
+	
+	<div id="modelContainer">
+		<div class="modelContent">
+			<span class="close">&times;</span>
+			<label for="TaskName"><h4>Task name</h4></label>
+			<input type="text" name="" id="name" placeholder="Task Name">
+			<label for="TaskDescription"><h4>Description</h4></label>
+			<textarea type="textarea" name="" id="description" placeholder="Task Description"></textarea>
+			<div class="modelButtons">
+				<br>
+				<button class="modelAddButton" id="confirmAdd"><i class="icon far fa-plus-square"></i> Add Task</button>
+				<button class="modelCancelButton" id="CancelAdd"><i class="icon far fa-minus-square"></i> Cancel Task</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="editModelContainer">
+		<div class="editModelContent">
+			<span class="close" id="closeBox">&times;</span>
+			<label for="TaskName">Task name</label>
+			<input type="text" name="" id="newName" placeholder="Task Name">
+			<label for="TaskDescription">Description</label>
+			<textarea type="textarea" name="" id="newDescription" placeholder="Task Description" rows="10" cols="50"></textarea>
+			<h6>Leave blank for no change</h6>
+			<div class="modelButtons">
+				<br>
+				<button class="modelAddButton" id="confirmEdit" onclick="confirmEdit()"><i class="icon far fa-edit"></i> Edit Task</button>
+				<button class="modelCancelButton" id="CancelEdit"><i class="icon far fa-minus-square"></i> Cancel Edit</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="style.js"></script>
+	<script src="https://kit.fontawesome.com/4b71d349eb.js" crossorigin="anonymous"></script>
+</body>
+</html>
